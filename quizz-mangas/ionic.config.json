@@ -1,0 +1,7 @@
+{
+  "name": "quizz-mangas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
