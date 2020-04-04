@@ -1,11 +1,11 @@
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, } from '@ionic/angular';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
-import { HomeRoutingModule } from './home.routing';
-
 import { HomeComponent } from './home.component';
+import { HomeRoutingModule } from './home.routing';
+import { OptionComponent } from '../option/option.component'
 
 @NgModule({
   imports: [
@@ -14,6 +14,10 @@ import { HomeComponent } from './home.component';
     FormsModule,
     HomeRoutingModule
   ],
-  declarations: [HomeComponent]
+  entryComponents: [
+    OptionComponent
+  ],
+  declarations: [HomeComponent, OptionComponent]
 })
+
 export class HomeModule {}
